@@ -40,9 +40,13 @@ def maybe_reexec_with_kokoro_python() -> None:
     requested = env_path("KOKORO_PYTHON")
     if not requested or os.environ.get(REEXEC_FLAG):
         return
-    current = Path(sys.executable).resolve()
-    target = requested.resolve()
-    if current == target:
+    # Do not resolve symlinks here. Virtualenv interpreters are often symlinks to
+    # the system Python binary, but executing the venv path is what activates the
+    # venv's sys.prefix/site-packages. Comparing resolved paths would incorrectly
+    # skip re-exec and then fail to import Kokoro.
+    current = Path(sys.executable).absolute()
+    target = requested.absolute()
+    if str(current) == str(target):
         return
     if not target.exists():
         raise SystemExit(f"KOKORO_PYTHON points to a missing executable: {target}\n{INSTALL_MESSAGE}")
@@ -171,15 +175,26 @@ def write_pcm16_wav(path: Path, samples: Iterable[float], sample_rate: int = DEF
     return count
 
 
+def extract_audio(item: Any) -> Any:
+    """Extract audio from Kokoro outputs across common API versions."""
+    # Newer Kokoro returns KPipeline.Result with output.audio.
+    output = getattr(item, "output", None)
+    if output is not None and hasattr(output, "audio"):
+        return output.audio
+    if hasattr(item, "audio"):
+        return item.audio
+    # Older examples commonly yield tuples like (graphemes, phonemes, audio).
+    if isinstance(item, tuple):
+        return item[-1]
+    return item
+
+
 def synth_segment(pipeline: Any, text: str, voice: str, speed: float, lang_code: str) -> list[float]:
     kwargs = {"voice": voice, "speed": speed}
     generator = pipeline(text, **kwargs)
     samples: list[float] = []
     for item in generator:
-        if isinstance(item, tuple):
-            audio = item[-1]
-        else:
-            audio = item
+        audio = extract_audio(item)
         samples.extend(to_float_list(audio))
     if not samples:
         raise SystemExit("Kokoro returned no audio for a segment")
