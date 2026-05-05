@@ -18,6 +18,19 @@ These are lightweight README previews of the kinds of workflows the skill drives
 | ![Paper explainer demo](examples/videos/paper-explainer-demo.gif) | ![Lecture recap demo](examples/videos/lecture-recap-demo.gif) | ![Current topic demo](examples/videos/current-topic-demo.gif) |
 | [MP4](examples/videos/paper-explainer-demo.mp4) | [MP4](examples/videos/lecture-recap-demo.mp4) | [MP4](examples/videos/current-topic-demo.mp4) |
 
+## Generated Showcase Videos
+
+These are real generated videos created with the skill workflow for this repository update. Each one includes narration, visuals, source notes, and verified audio/video streams.
+
+| Repo intro | GenLIP paper showcase | ClawMark paper showcase |
+|---|---|---|
+| ![Video Production AgentSkill repo intro](examples/generated/repo-intro/repo-intro.gif) | ![GenLIP showcase thumbnail](examples/generated/papers/genlip-let-vit-speak/exports/thumbnail.png) | ![ClawMark showcase preview](examples/generated/papers/clawmark-living-world-benchmark/exports/clawmark_showcase_preview.gif) |
+| [MP4](examples/generated/repo-intro/repo-intro.mp4) · [verification](examples/generated/repo-intro/verification.txt) | [MP4](examples/generated/papers/genlip-let-vit-speak/exports/genlip-let-vit-speak-showcase.mp4) · [sources](examples/generated/papers/genlip-let-vit-speak/source_notes.md) | [MP4](examples/generated/papers/clawmark-living-world-benchmark/exports/clawmark_showcase.mp4) · [sources](examples/generated/papers/clawmark-living-world-benchmark/source-notes.md) |
+
+- **Repo intro**: 85-second narrated walkthrough of what this AgentSkill does and how agents use it.
+- **GenLIP / Let ViT Speak**: 116-second narrated showcase for a recent multimodal generative pretraining paper.
+- **ClawMark**: 103-second narrated showcase for a recent multi-turn, multi-day coworker-agent benchmark paper.
+
 ## What it does
 
 `video-production` gives agents a repeatable production workflow:
@@ -40,6 +53,7 @@ skills/video-production/
 ├── SKILL.md
 ├── scripts/
 │   ├── init_video_job.py
+│   ├── synth_kokoro.py
 │   ├── archive_video.py
 │   └── host_video.py
 └── references/
@@ -95,7 +109,7 @@ Required:
 Recommended:
 
 - Manim for animated diagrams/equations
-- A TTS stack such as Kokoro, OpenAI TTS, ElevenLabs, or Piper
+- Kokoro TTS for the built-in `synth_kokoro.py` path, or another TTS stack such as OpenAI TTS, ElevenLabs, or Piper
 - poppler-utils for paper/PDF extraction
 - Pillow for image/crop workflows
 - Tailscale for private one-file hosting fallback
@@ -107,6 +121,21 @@ Set `VIDEO_PRODUCTION_ROOT` to control where generated jobs live. Default: `~/vi
 ```bash
 export VIDEO_PRODUCTION_ROOT="$PWD/.video-productions"
 python skills/video-production/scripts/init_video_job.py "Attention explainer" --prompt "Make a short video about attention"
+```
+
+### Kokoro TTS check
+
+If Kokoro is installed in the active environment:
+
+```bash
+python skills/video-production/scripts/synth_kokoro.py --check
+```
+
+Or point the skill at a Kokoro virtualenv:
+
+```bash
+KOKORO_PYTHON=/path/to/kokoro/.venv/bin/python \
+  python skills/video-production/scripts/synth_kokoro.py --check
 ```
 
 Package locally:

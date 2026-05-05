@@ -1,0 +1,21 @@
+Video Production AgentSkill repo intro verification
+
+Final MP4: examples/generated/repo-intro/repo-intro.mp4
+Duplicate convenience path: examples/generated/repo-intro/final.mp4
+GIF preview: examples/generated/repo-intro/repo-intro.gif
+Thumbnail: examples/generated/repo-intro/thumbnail.png
+Job workspace: examples/generated/repo-intro/video-productions/jobs/2026-05-04-2041-repo-intro
+Archived MP4: examples/generated/repo-intro/video-productions/jobs/2026-05-04-2041-repo-intro/exports/repo-intro.mp4
+Backup MP4: examples/generated/repo-intro/video-productions/backups/2026-05-04/repo-intro.mp4
+
+ffprobe -show_entries format=duration,size:
+duration=85.559000
+size=8955812
+
+ffprobe -select_streams a:0 -show_entries stream=index,codec_name,codec_type,duration:
+index=1
+codec_name=aac
+codec_type=audio
+duration=85.559000
+
+Visual QC: sampled frames at 4s, 18s, 34s, 49s, 65s, and 80s. Final QC passed: legible, no severe cropping/overlap.

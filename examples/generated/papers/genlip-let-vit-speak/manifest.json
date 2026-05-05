@@ -1,0 +1,98 @@
+{
+  "slug": "genlip-let-vit-speak",
+  "paper": {
+    "title": "Let ViT Speak: Generative Language-Image Pre-training",
+    "arxiv_id": "2605.00809",
+    "authors": [
+      "Yan Fang",
+      "Mengcheng Lan",
+      "Zilong Huang",
+      "Weixian Lei",
+      "Yunqing Zhao",
+      "Yujie Zhong",
+      "Yingchen Yu",
+      "Qi She",
+      "Yao Zhao",
+      "Yunchao Wei"
+    ],
+    "selection_note": "Chosen as a recent, high-signal multimodal/generative vision-encoder paper from primary sources as of 2026-05-05; it is distinct from obvious video-generation picks like UniVidX."
+  },
+  "sources": [
+    {
+      "label": "arXiv abs",
+      "url": "https://arxiv.org/abs/2605.00809"
+    },
+    {
+      "label": "arXiv PDF",
+      "url": "https://arxiv.org/pdf/2605.00809"
+    },
+    {
+      "label": "Official project page",
+      "url": "https://yanfangcs.github.io/vitspeak/"
+    },
+    {
+      "label": "Official code",
+      "url": "https://github.com/YanFangCS/GenLIP"
+    },
+    {
+      "label": "Official models",
+      "url": "https://huggingface.co/collections/YanFang/genlip"
+    },
+    {
+      "label": "Hugging Face paper page",
+      "url": "https://huggingface.co/papers/2605.00809"
+    }
+  ],
+  "outputs": {
+    "mp4": "exports/genlip-let-vit-speak-showcase.mp4",
+    "gif": "exports/preview.gif",
+    "thumbnail": "exports/thumbnail.png",
+    "qc_frames": [
+      "frames/frame_01.png",
+      "frames/frame_02.png",
+      "frames/frame_03.png"
+    ],
+    "audio": "audio/voice.wav",
+    "scripts": [
+      "src/generate_audio.py",
+      "src/render_video.py",
+      "src/segments.json"
+    ],
+    "source_notes": "source_notes.md",
+    "readme_snippet": "README_SNIPPET.md"
+  },
+  "verification": {
+    "ffprobe_format": {
+      "format": {
+        "duration": "116.272000",
+        "size": "4326465"
+      }
+    },
+    "ffprobe_audio": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "aac",
+          "codec_type": "audio",
+          "sample_rate": "48000",
+          "channels": 1,
+          "duration": "116.272000"
+        }
+      ]
+    },
+    "ffprobe_video": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "width": 1280,
+          "height": 720,
+          "r_frame_rate": "24/1",
+          "duration": "116.166667"
+        }
+      ]
+    },
+    "decode_check": "ffmpeg -v error -i final -f null - completed with exit 0",
+    "visual_qc": "Representative frames inspected; no major layout/readability issues after removing lower-third captions."
+  }
+}

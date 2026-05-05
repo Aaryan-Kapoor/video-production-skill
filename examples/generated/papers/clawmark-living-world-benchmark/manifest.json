@@ -1,0 +1,33 @@
+{
+  "slug": "clawmark-living-world-benchmark",
+  "selected_paper": {
+    "title": "ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents",
+    "arxiv_id": "2604.23781v1",
+    "submitted": "2026-04-26",
+    "sources": [
+      "https://arxiv.org/abs/2604.23781",
+      "https://arxiv.org/pdf/2604.23781",
+      "https://claw-mark.com/",
+      "https://github.com/evolvent-ai/ClawMark"
+    ]
+  },
+  "outputs": {
+    "mp4": "exports/clawmark_showcase.mp4",
+    "gif_preview": "exports/clawmark_showcase_preview.gif",
+    "thumbnail": "exports/thumbnail.png",
+    "source_notes": "source-notes.md",
+    "segments": "src/segments.json",
+    "timings": "src/timings.json",
+    "render_script": "src/render_video.py"
+  },
+  "verification": {
+    "duration_seconds": 103.35,
+    "size_bytes": 5834397,
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 24000,
+    "audio_channels": 1,
+    "audio_duration_seconds": 103.35,
+    "visual_qc": "Pass via frame inspection: frames/qc_4s.png, qc_22s.png, qc_45s.png, qc_66s.png, qc_88s.png"
+  },
+  "readme_snippet": "| ClawMark paper showcase |\n|---|\n| ![ClawMark showcase preview](examples/generated/papers/clawmark-living-world-benchmark/exports/clawmark_showcase_preview.gif) |\n| [MP4](examples/generated/papers/clawmark-living-world-benchmark/exports/clawmark_showcase.mp4) \u00b7 [Notes](examples/generated/papers/clawmark-living-world-benchmark/source-notes.md) |"
+}

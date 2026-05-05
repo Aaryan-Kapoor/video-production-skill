@@ -1,0 +1,7 @@
+Primary sources for selected paper:
+- arXiv abs: https://arxiv.org/abs/2605.00809
+- arXiv PDF: https://arxiv.org/pdf/2605.00809
+- Official project page: https://yanfangcs.github.io/vitspeak/
+- Official code: https://github.com/YanFangCS/GenLIP
+- Official models collection: https://huggingface.co/collections/YanFang/genlip
+- Hugging Face paper page: https://huggingface.co/papers/2605.00809
