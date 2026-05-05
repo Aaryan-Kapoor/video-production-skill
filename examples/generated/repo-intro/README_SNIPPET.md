@@ -1,23 +1,10 @@
-## Repository intro video
+### Repo intro remake
 
-A generated 85-second narrated showcase explaining what the `video-production` AgentSkill does, how the workflow runs, how this repo is laid out, and how agents install/use it.
+A 3m46s narrated walkthrough of how the `video-production` AgentSkill actually works as a local media-production pipeline: installable skill folder, durable workspace, prompt-to-sources-to-segments flow, Kokoro narration, visual rendering, muxing, QC, archive, and README showcase update.
 
-| Repo intro |
-|---|
-| ![Video Production AgentSkill repo intro](examples/generated/repo-intro/repo-intro.gif) |
-| [MP4](examples/generated/repo-intro/repo-intro.mp4) · [thumbnail](examples/generated/repo-intro/thumbnail.png) |
+- [MP4](repo-intro.mp4)
+- [GIF preview](repo-intro.gif)
+- [thumbnail](thumbnail.png)
+- [verification](verification.txt)
 
-Generated artifacts:
-
-- `examples/generated/repo-intro/repo-intro.mp4` - final narrated MP4
-- `examples/generated/repo-intro/repo-intro.gif` - README-friendly GIF preview
-- `examples/generated/repo-intro/thumbnail.png` - showcase thumbnail
-- `examples/generated/repo-intro/video-productions/...` - job workspace, script, audio, timings, QC frames, archive metadata
-
-Verification:
-
-```text
-duration=85.559000
-codec_name=aac
-audio_duration=85.559000
-```
+Generated job workspace: `/home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake`
