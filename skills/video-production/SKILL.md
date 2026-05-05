@@ -15,7 +15,7 @@ When the user gives broad creative freedom, preserve the "go all out" standard: 
 
 ## Compatibility
 
-Requires Python 3.10+ and ffmpeg/ffprobe. Recommended optional tools: Manim, a TTS stack such as Kokoro/OpenAI TTS/ElevenLabs/Piper, poppler-utils, Pillow, and Tailscale for private hosting.
+Requires Python 3.10+ and ffmpeg/ffprobe. Recommended optional tools: Manim, Kokoro or another TTS stack, poppler-utils, Pillow, and Tailscale for private hosting. Kokoro can be wired portably with `KOKORO_PYTHON`, `KOKORO_TTS_DIR`, `KOKORO_VOICE`, and `KOKORO_LANG_CODE`; do not hardcode user-specific install paths.
 
 ## Workspace Contract
 
@@ -81,13 +81,18 @@ Read `references/production-standards.md` when the user asks for a high-effort e
 
 ### Voiceover
 
-Use any reliable TTS available in the environment. Save one WAV per segment plus a combined `audio/voice.wav` and `audio/timings.json`.
-
-Normalize:
+Prefer the bundled Kokoro helper when Kokoro is available. It accepts `src/segments.json` or a plain text file, writes one WAV per segment, combines `audio/voice_raw.wav`, normalizes `audio/voice.wav` with ffmpeg loudnorm, and records segment starts/durations in `audio/timings.json`.
 
 ```bash
-ffmpeg -y -i audio/voice_raw.wav -af "loudnorm=I=-16:TP=-1.5:LRA=11" audio/voice.wav
+# Optional portable wiring; set only what the environment needs.
+export KOKORO_PYTHON=/path/to/python-with-kokoro
+export KOKORO_TTS_DIR=/path/to/kokoro/repo
+export KOKORO_VOICE=af_heart
+
+python {baseDir}/scripts/synth_kokoro.py src/segments.json --out audio
 ```
+
+Use `python {baseDir}/scripts/synth_kokoro.py --check` to validate Kokoro + ffmpeg availability. If unavailable, fall back to another reliable TTS stack, but preserve the same artifacts: per-segment WAVs, `audio/voice_raw.wav`, normalized `audio/voice.wav`, and `audio/timings.json`.
 
 ### Manim environment
 

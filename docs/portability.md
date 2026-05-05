@@ -16,5 +16,16 @@ Recommended:
 Environment variables:
 
 - `VIDEO_PRODUCTION_ROOT`: durable output directory. Defaults to `~/video-productions`.
+- `KOKORO_PYTHON`: Python executable for an environment where `import kokoro` works. The Kokoro helper re-execs through this interpreter.
+- `KOKORO_TTS_DIR`: optional local Kokoro checkout to prepend to `PYTHONPATH`.
+- `KOKORO_VOICE`: default Kokoro voice, for example `af_heart`.
+- `KOKORO_LANG_CODE`: Kokoro language code. Defaults to `a`.
+- `KOKORO_SPEED`: optional speaking speed. Defaults to `1.0`.
 
-The skill intentionally avoids hardcoded user paths. If an environment has a preferred TTS or hosting stack, document it outside the public skill or inject it through agent/workspace-specific notes.
+The bundled Kokoro script is `skills/video-production/scripts/synth_kokoro.py`. It accepts a `segments.json` or plain text file, writes per-segment WAVs, combines `voice_raw.wav`, loudness-normalizes `voice.wav`, and emits `timings.json`. Validate a host with:
+
+```bash
+python skills/video-production/scripts/synth_kokoro.py --check
+```
+
+The skill intentionally avoids hardcoded user paths. If an environment has a preferred TTS or hosting stack, inject it through these environment variables or workspace-specific notes instead of editing the public skill.
