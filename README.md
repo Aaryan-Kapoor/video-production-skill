@@ -72,6 +72,8 @@ examples/videos/
 
 ## Install
 
+> **Letting an AI agent install this for you?** Point it at [`INSTALL_FOR_AGENTS.md`](INSTALL_FOR_AGENTS.md) — a step-by-step guide that tells the agent how to add this skill to its skills directory.
+
 ### OpenClaw
 
 ```bash
