@@ -2,7 +2,7 @@
 name: video-production
 description: End-to-end educational and explainer video production with research, source extraction, storyboard/script, Manim/ffmpeg visuals, TTS voiceover, QC, archival backups, and optional local/Tailscale hosting. Use when the user asks to make, create, generate, render, or produce a video, explainer, paper walkthrough, lecture recap, class-prep video, daily summary video, Manim animation, or narrated presentation.
 license: MIT
-metadata: {"author":"Aaryan Kapoor","homepage":"https://github.com/Aaryan-Kapoor/video-production-skill","version":"0.1.0"}
+metadata: {"author":"Aaryan Kapoor","homepage":"https://github.com/Aaryan-Kapoor/video-production-skill","version":"0.2.0"}
 ---
 
 # Video Production
