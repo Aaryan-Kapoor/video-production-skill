@@ -9,6 +9,12 @@ This is built for requests like:
 - “Make a daily summary video with sources and caveats.”
 - “Go all out on an explainer with Manim visuals and narration.”
 
+## Install with an AI agent
+
+**Want an AI coding agent (Claude Code, OpenClaw, Gemini CLI, …) to install this for you?** Just point it at **[`INSTALL_FOR_AGENTS.md`](INSTALL_FOR_AGENTS.md)** — a step-by-step guide that walks the agent through adding this skill (plus its scripts and references) to its skills directory and checking dependencies. No manual setup required.
+
+> Prefer to install it yourself? See the [Install](#install) section below.
+
 ## Showcase
 
 These are lightweight README previews of the kinds of workflows the skill drives. Full generated videos live beside each GIF as MP4s.
@@ -72,7 +78,7 @@ examples/videos/
 
 ## Install
 
-> **Letting an AI agent install this for you?** Point it at [`INSTALL_FOR_AGENTS.md`](INSTALL_FOR_AGENTS.md) — a step-by-step guide that tells the agent how to add this skill to its skills directory.
+> **Using an AI agent?** Point it at [`INSTALL_FOR_AGENTS.md`](INSTALL_FOR_AGENTS.md) and it will handle everything below automatically.
 
 ### OpenClaw
 
