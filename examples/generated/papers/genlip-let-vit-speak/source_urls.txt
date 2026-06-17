@@ -1,0 +1,5 @@
+https://arxiv.org/abs/2605.00809
+https://arxiv.org/pdf/2605.00809
+https://yanfangcs.github.io/vitspeak/
+https://github.com/YanFangCS/GenLIP
+https://huggingface.co/collections/YanFang/genlip

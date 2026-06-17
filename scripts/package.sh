@@ -22,6 +22,7 @@ if not desc or len(desc.group(1).strip()) < 20:
     raise SystemExit('description is missing or too short')
 print('Validation OK')
 PY
+find "$SKILL" -type d -name __pycache__ -prune -exec rm -rf {} +
 (cd "$ROOT/skills" && zip -qr "$DIST/video-production.zip" video-production)
 cp "$DIST/video-production.zip" "$DIST/video-production.skill"
 python3 - "$DIST" <<'PY'

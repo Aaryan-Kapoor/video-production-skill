@@ -1,0 +1,59 @@
+{
+  "slug": "clawmark-living-world-benchmark",
+  "remake_job": "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-clawmark-showcase-remake",
+  "selected_paper": {
+    "title": "ClawMark: A Living-World Benchmark for Multi-Turn, Multi-Day, Multimodal Coworker Agents",
+    "arxiv_id": "2604.23781v1",
+    "submitted": "2026-04-26",
+    "sources": [
+      "https://arxiv.org/abs/2604.23781",
+      "https://arxiv.org/pdf/2604.23781",
+      "https://claw-mark.com/",
+      "https://github.com/evolvent-ai/ClawMark"
+    ]
+  },
+  "outputs": {
+    "mp4": "exports/clawmark_showcase.mp4",
+    "gif_preview": "exports/clawmark_showcase_preview.gif",
+    "thumbnail": "exports/thumbnail.png",
+    "source_notes": "source-notes.md"
+  },
+  "production": {
+    "target_style": "compressed technical lecture; source-grounded diagrams/charts/examples, no headline-only marketing slides",
+    "narration": "Kokoro TTS real synthesis via repo synth_kokoro.py with KOKORO_PYTHON set",
+    "visual_requirements_met": [
+      "actual ClawMark task example: insurance_task5",
+      "five-service/state diagram",
+      "deterministic scoring/checker diagram",
+      "recreated leaderboard strict-vs-weighted chart",
+      "failure-mode chart",
+      "caveats frame"
+    ]
+  },
+  "verification": {
+    "duration_seconds": 331.445,
+    "size_bytes": 7685555,
+    "resolution": "1280x720",
+    "video_codec": "h264",
+    "fps": "24/1",
+    "audio_codec": "aac",
+    "audio_sample_rate_hz": 24000,
+    "audio_channels": 1,
+    "audio_duration_seconds": 331.445,
+    "full_decode_log": "logs/full_decode.log (empty = pass)",
+    "visual_qc_frames": [
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-clawmark-showcase-remake/frames/qc_scene01_15.953s.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-clawmark-showcase-remake/frames/qc_scene02_48.407s.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-clawmark-showcase-remake/frames/qc_scene03_83.025s.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-clawmark-showcase-remake/frames/qc_scene04_115.78s.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-clawmark-showcase-remake/frames/qc_scene05_147.697s.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-clawmark-showcase-remake/frames/qc_scene06_182.515s.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-clawmark-showcase-remake/frames/qc_scene07_218.37s.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-clawmark-showcase-remake/frames/qc_scene08_253.037s.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-clawmark-showcase-remake/frames/qc_scene09_286.83s.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-clawmark-showcase-remake/frames/qc_scene10_317.857s.png"
+    ],
+    "visual_qc_result": "Pass via representative frame inspection across all 10 scenes."
+  },
+  "readme_snippet": "| ClawMark paper showcase |\n|---|\n| ![ClawMark showcase preview](examples/generated/papers/clawmark-living-world-benchmark/exports/clawmark_showcase_preview.gif) |\n| [MP4](examples/generated/papers/clawmark-living-world-benchmark/exports/clawmark_showcase.mp4) \u00b7 [Notes](examples/generated/papers/clawmark-living-world-benchmark/source-notes.md) |"
+}

@@ -1,0 +1,53 @@
+Video Production AgentSkill repo intro verification
+
+Final MP4: examples/generated/repo-intro/repo-intro.mp4
+GIF preview: examples/generated/repo-intro/repo-intro.gif
+Thumbnail: examples/generated/repo-intro/thumbnail.png
+Job workspace: /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake
+Archived MP4: /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/exports/repo-intro.mp4
+Backup MP4: /home/cbak/clawd/video-productions/backups/2026-05-04/repo-intro.mp4
+
+Content summary:
+- 3m46s narrated technical walkthrough of the skill pipeline.
+- Includes repo artifacts: SKILL.md excerpts, workflow diagram, durable workspace tree, scripts/package artifacts, synth_kokoro.py --check, segments.json, timings/QC frames, archive path, and README showcase paths.
+- Includes mini worked example: prompt -> sources -> segments -> Kokoro audio -> visuals -> mux -> QC -> archive -> README showcase.
+- Includes honest caveat frame about local dependencies and mandatory source grounding/QC.
+
+ffprobe format:
+duration=225.970
+size=21980926 bytes
+bit_rate=778189
+
+video stream:
+codec_name=h264
+width=1280
+height=720
+avg_frame_rate=15/1
+duration=225.933
+
+audio stream:
+codec_name=aac
+sample_rate=48000
+channels=1
+duration=225.970
+bit_rate=160905
+
+Kokoro check: /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/logs/kokoro-check.txt
+Kokoro synthesis log: /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/logs/kokoro-synth.txt
+Timings JSON: /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/audio/timings.json
+Full decode QC: passed; ffmpeg stderr empty at /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/logs/full-decode.stderr
+Visual QC: representative frames extracted and inspected for readability/cropping/overlap. Second pass passed.
+QC frame paths:
+- /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/frames/qc-012.jpg
+- /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/frames/qc-035.jpg
+- /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/frames/qc-058.jpg
+- /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/frames/qc-078.jpg
+- /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/frames/qc-098.jpg
+- /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/frames/qc-122.jpg
+- /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/frames/qc-146.jpg
+- /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/frames/qc-170.jpg
+- /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/frames/qc-194.jpg
+- /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/frames/qc-218.jpg
+- /home/cbak/clawd/video-productions/jobs/2026-05-04-2124-video-production-skill-intro-remake/frames/qc-contact.jpg
+
+No commit or push was performed.

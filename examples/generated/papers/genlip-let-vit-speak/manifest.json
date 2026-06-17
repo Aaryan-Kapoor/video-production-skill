@@ -1,0 +1,206 @@
+{
+  "slug": "genlip-let-vit-speak",
+  "paper": {
+    "title": "Let ViT Speak: Generative Language-Image Pre-training",
+    "arxiv_id": "2605.00809",
+    "authors": [
+      "Yan Fang",
+      "Mengcheng Lan",
+      "Zilong Huang",
+      "Weixian Lei",
+      "Yunqing Zhao",
+      "Yujie Zhong",
+      "Yingchen Yu",
+      "Qi She",
+      "Yao Zhao",
+      "Yunchao Wei"
+    ],
+    "selection_note": "Recent multimodal/generative vision-encoder paper from primary sources; remade as a deeper technical lecture for the video-production skill example."
+  },
+  "sources": [
+    {
+      "label": "arXiv abs",
+      "url": "https://arxiv.org/abs/2605.00809"
+    },
+    {
+      "label": "arXiv PDF",
+      "url": "https://arxiv.org/pdf/2605.00809"
+    },
+    {
+      "label": "Official project page",
+      "url": "https://yanfangcs.github.io/vitspeak/"
+    },
+    {
+      "label": "Official code",
+      "url": "https://github.com/YanFangCS/GenLIP"
+    },
+    {
+      "label": "Official models",
+      "url": "https://huggingface.co/collections/YanFang/genlip"
+    }
+  ],
+  "remake": {
+    "created_at": "2026-05-04T21:40:46-04:00",
+    "job_workspace": "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake",
+    "intent": "Replace shallow promotional output with a source-grounded compressed technical lecture.",
+    "narrative_arc": [
+      "contrastive/CLIP objective mismatch",
+      "GenLIP direct next-token visual objective",
+      "training and deployment pipeline",
+      "frozen-feature results with exact baselines",
+      "ablations and scaling",
+      "caveats and takeaway"
+    ]
+  },
+  "outputs": {
+    "mp4": "exports/genlip-let-vit-speak-showcase.mp4",
+    "gif": "exports/preview.gif",
+    "thumbnail": "exports/thumbnail.png",
+    "source_notes": "source_notes.md",
+    "readme_snippet": "README_SNIPPET.md",
+    "job_audio": "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake/audio/voice.wav",
+    "job_scripts": [
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake/src/segments.json",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake/src/make_slides.py"
+    ],
+    "job_qc_frames": [
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake/frames/qc_00-00-05.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake/frames/qc_00-00-45.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake/frames/qc_00-01-25.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake/frames/qc_00-02-05.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake/frames/qc_00-02-55.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake/frames/qc_00-03-35.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake/frames/qc_00-04-15.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake/frames/qc_00-05-00.png",
+      "/home/cbak/clawd/video-productions/jobs/2026-05-04-2123-genlip-let-vit-speak-showcase-remake/frames/qc_00-05-35.png"
+    ]
+  },
+  "verification": {
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1280,
+          "height": 720,
+          "coded_width": 1280,
+          "coded_height": 720,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "pix_fmt": "yuv420p",
+          "level": 31,
+          "chroma_location": "left",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "30/1",
+          "avg_frame_rate": "30/1",
+          "time_base": "1/15360",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 5460480,
+          "duration": "355.500000",
+          "bit_rate": "94130",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "10665",
+          "extradata_size": 46,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc60.31.102 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 1,
+          "channel_layout": "mono",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 17069520,
+          "duration": "355.615000",
+          "bit_rate": "160412",
+          "nb_frames": "16671",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ],
+      "format": {
+        "duration": "355.615000",
+        "size": "11707180",
+        "bit_rate": "263367"
+      }
+    },
+    "decode_check": "ffmpeg -v error -i final -f null - completed with exit 0",
+    "visual_qc": "Representative frames inspected after slide fixes; no major cropping/layout/readability issues remain.",
+    "kokoro": "Audio synthesized with Kokoro using KOKORO_PYTHON=/home/cbak/clawd/projects/archived_projects/ai-podcast/tts-kokoro/.venv/bin/python; voice=af_heart; speed=1.03.",
+    "resolution": "1280x720",
+    "duration_seconds": 355.615
+  }
+}
