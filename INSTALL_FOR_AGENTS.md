@@ -130,7 +130,7 @@ Tell the user:
 2. Required dependencies present/missing (`python3`, `ffmpeg`, `ffprobe`).
 3. Which optional tools are available (Manim, TTS, poppler, Tailscale).
 4. That they can now ask for things like *"make a video explaining this paper"* or
-   *"turn these lecture notes into a pre-class video"*.
+   *"make a product walkthrough with narration and animated diagrams"*.
 
 When a video request arrives, read `<SKILLS_DIR>/video-production/SKILL.md` and follow
 its Standard Workflow. Treat a video request as a finished deliverable, not a plan.

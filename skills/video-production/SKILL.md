@@ -1,6 +1,6 @@
 ---
 name: video-production
-description: End-to-end educational and explainer video production with research, source extraction, storyboard/script, Manim/ffmpeg visuals, TTS voiceover, QC, archival backups, and optional local/Tailscale hosting. Use when the user asks to make, create, generate, render, or produce a video, explainer, paper walkthrough, lecture recap, class-prep video, daily summary video, Manim animation, or narrated presentation.
+description: End-to-end narrated video production with research, source extraction, storyboard/script, Manim/ffmpeg visuals, TTS voiceover, QC, archival backups, and optional local/Tailscale hosting. Use when the user asks to make, create, generate, render, or produce a video, explainer, paper walkthrough, product demo, briefing, daily summary video, Manim animation, or narrated presentation.
 license: MIT
 metadata: {"author":"Aaryan Kapoor","homepage":"https://github.com/Aaryan-Kapoor/video-production-skill","version":"0.2.0"}
 ---
@@ -59,7 +59,6 @@ Use `/tmp/video-production-<slug>/` only for disposable intermediates. Keep dura
 2. **Create the job workspace.** Save prompt, source IDs/URLs, scripts, and final artifacts under the video production root.
 3. **Gather sources.**
    - Paper: fetch PDF/page, extract text and page images.
-   - Course/LMS: use the platform's safe/official export or CLI path; do not browser-scrape private course data.
    - Current/mutable topic: browse or use first-party sources.
    - Stable topic: use knowledge plus targeted verification where useful.
 4. **Build a production brief.** For long/technical sources, summarize thesis, structure, figures/tables, numbers, caveats, and narrative arc before scripting.
@@ -73,7 +72,7 @@ Use `/tmp/video-production-<slug>/` only for disposable intermediates. Keep dura
 
 ## Source-Specific Guidance
 
-Read `references/source-playbooks.md` when the video depends on a paper, course material, current events, or a recurring daily summary.
+Read `references/source-playbooks.md` when the video depends on a paper, product or project material, current events, or a recurring daily summary.
 
 Read `references/production-standards.md` when the user asks for a high-effort explainer, says "go all out", or the video should be unusually polished.
 

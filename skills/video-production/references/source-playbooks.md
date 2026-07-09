@@ -8,12 +8,11 @@
 5. Build source-grounded charts from reported numbers instead of relying only on screenshots.
 6. Include caveats: version/peer-review state, assumptions, scope limits, implementation constraints.
 
-## KSU / D2L class video
-1. Load the `d2l` skill first; never scrape D2L with browser/Playwright.
-2. Read the course `notes.md` and `sop.md` before course work.
-3. For Calc II schedule/due-date questions, pull the latest weekly PDF from D2L first.
-4. Save generated class artifacts under `ksu/courses/<course>/{assignments}/<assignment>/` when tied to an assignment; otherwise use the video-production workspace and link the course source in manifest.
-5. For pre-class videos: extract learning objectives, definitions, examples, and likely pitfalls.
+## Product / project walkthrough
+1. Gather the product page, repository, docs, changelog, screenshots, or demo data the user wants covered.
+2. Identify the audience, promise, workflow, differentiators, limitations, and concrete proof points.
+3. Prefer showing real UI, diagrams, traces, charts, or before/after examples over generic stock visuals.
+4. Keep claims source-grounded and record source provenance in the manifest.
 
 ## General topic video
 1. Decide whether the facts are stable. Browse for current/unstable topics.
@@ -23,6 +22,6 @@
 
 ## Daily summary video
 1. Create a scheduled/durable job if the user wants recurrence.
-2. Pull data from first-party tools: D2L for courses, Google Workspace for calendar/email/docs when relevant, web for news/current events.
+2. Pull data from first-party tools, workspace sources, and web sources as appropriate for the requested briefing.
 3. Keep the video short unless the user asks for depth: usually 2-5 minutes.
 4. Archive every daily output in backups by date.

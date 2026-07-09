@@ -1,10 +1,10 @@
 # Go-All-Out Video Production Standards
 
-Use this reference when the user asks for a high-effort explainer, paper video, class-prep video, daily summary video, or gives broad creative freedom.
+Use this reference when the user asks for a high-effort explainer, paper video, product demo, daily summary video, or gives broad creative freedom.
 
 ## Default Ambition
 - Treat "make a video" as a finished product request: research, script, visuals, narration, render, verify, deliver/host.
-- Prefer educational clarity over decoration, but make it visually polished: animated diagrams, paper/source callouts, charts, concise tables, and memorable metaphors.
+- Prefer clarity over decoration, but make it visually polished: animated diagrams, source callouts, charts, concise tables, and memorable metaphors.
 - If the user says "go all out", "radically good", "creative freedom", or similar: include a proper narrative arc, multiple visual modes, source figures/tables when available, caveats, and a final synthesis.
 
 ## Quality Bar
@@ -15,10 +15,10 @@ Use this reference when the user asks for a high-effort explainer, paper video, 
 - If direct media upload fails, host over Tailscale and provide a link.
 
 ## Common Formats
-- **Concept explainer:** hook → intuition → mechanism → examples → misconceptions → summary.
-- **Research paper:** problem → key idea → architecture/method → training/theory → experiments → ablations/cost → caveats → takeaway.
-- **Class prep:** what class will cover → prerequisites → definitions → worked examples → likely quiz/exam traps → checklist.
-- **Daily summary:** date/context → top items → why they matter → deadlines/actions → short recap.
+- **Concept explainer:** hook -> intuition -> mechanism -> examples -> misconceptions -> summary.
+- **Research paper:** problem -> key idea -> architecture/method -> training/theory -> experiments -> ablations/cost -> caveats -> takeaway.
+- **Product/project demo:** problem -> audience -> workflow -> differentiators -> proof points -> limitations -> call to action.
+- **Daily summary:** date/context -> top items -> why they matter -> deadlines/actions -> short recap.
 
 ## Visual Language
 - Use dark background with high-contrast color palette.

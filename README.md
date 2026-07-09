@@ -1,41 +1,41 @@
 # Video Production Agent Skill
 
-Turn an AI agent into a full-stack educational video producer: research, storyboard, narration, animated visuals, render, QC, archive, and delivery.
+Turn an AI agent into a full-stack video producer: research, storyboard, narration, animated visuals, render, QC, archive, and delivery.
 
 This is built for requests like:
 
-- “Make a video explaining this research paper.”
-- “Turn these lecture notes into a pre-class video.”
-- “Make a daily summary video with sources and caveats.”
-- “Go all out on an explainer with Manim visuals and narration.”
+- "Make a video explaining this research paper."
+- "Make a product walkthrough with narration and animated diagrams."
+- "Make a daily summary video with sources and caveats."
+- "Go all out on an explainer with Manim visuals and narration."
 
 ## Install with an AI agent
 
-**Want an AI coding agent (Claude Code, OpenClaw, Gemini CLI, …) to install this for you?** Just point it at **[`INSTALL_FOR_AGENTS.md`](INSTALL_FOR_AGENTS.md)** — a step-by-step guide that walks the agent through adding this skill (plus its scripts and references) to its skills directory and checking dependencies. No manual setup required.
+**Want an AI coding agent (Claude Code, OpenClaw, Gemini CLI, etc.) to install this for you?** Just point it at **[`INSTALL_FOR_AGENTS.md`](INSTALL_FOR_AGENTS.md)** - a step-by-step guide that walks the agent through adding this skill (plus its scripts and references) to its skills directory and checking dependencies. No manual setup required.
 
 > Prefer to install it yourself? See the [Install](#install) section below.
 
 ## Showcase
 
-These are lightweight README previews of the kinds of workflows the skill drives. Full generated videos live beside each GIF as MP4s.
-
-| Research paper explainer | Lecture recap | Current-topic briefing |
-|---|---|---|
-| ![Paper explainer demo](examples/videos/paper-explainer-demo.gif) | ![Lecture recap demo](examples/videos/lecture-recap-demo.gif) | ![Current topic demo](examples/videos/current-topic-demo.gif) |
-| [MP4](examples/videos/paper-explainer-demo.mp4) | [MP4](examples/videos/lecture-recap-demo.mp4) | [MP4](examples/videos/current-topic-demo.mp4) |
-
-## Generated Showcase Videos
-
 These are real generated videos created with the skill workflow for this repository update. Each one includes narration, visuals, source notes, and verified audio/video streams.
 
 | Repo intro | GenLIP paper showcase | ClawMark paper showcase |
 |---|---|---|
-| ![Video Production AgentSkill repo intro](examples/generated/repo-intro/repo-intro.gif) | ![GenLIP showcase thumbnail](examples/generated/papers/genlip-let-vit-speak/exports/thumbnail.png) | ![ClawMark showcase preview](examples/generated/papers/clawmark-living-world-benchmark/exports/clawmark_showcase_preview.gif) |
-| [MP4](examples/generated/repo-intro/repo-intro.mp4) · [verification](examples/generated/repo-intro/verification.txt) | [MP4](examples/generated/papers/genlip-let-vit-speak/exports/genlip-let-vit-speak-showcase.mp4) · [sources](examples/generated/papers/genlip-let-vit-speak/source_notes.md) | [MP4](examples/generated/papers/clawmark-living-world-benchmark/exports/clawmark_showcase.mp4) · [sources](examples/generated/papers/clawmark-living-world-benchmark/source-notes.md) |
+| ![Video Production Agent Skill repo intro](examples/generated/repo-intro/repo-intro.gif) | ![GenLIP showcase thumbnail](examples/generated/papers/genlip-let-vit-speak/exports/thumbnail.png) | ![ClawMark showcase preview](examples/generated/papers/clawmark-living-world-benchmark/exports/clawmark_showcase_preview.gif) |
+| [Full MP4](examples/generated/repo-intro/repo-intro.mp4) / [verification](examples/generated/repo-intro/verification.txt) | [Full MP4](examples/generated/papers/genlip-let-vit-speak/exports/genlip-let-vit-speak-showcase.mp4) / [sources](examples/generated/papers/genlip-let-vit-speak/source_notes.md) | [Full MP4](examples/generated/papers/clawmark-living-world-benchmark/exports/clawmark_showcase.mp4) / [sources](examples/generated/papers/clawmark-living-world-benchmark/source-notes.md) |
 
-- **Repo intro**: 85-second narrated walkthrough of what this AgentSkill does and how agents use it.
-- **GenLIP / Let ViT Speak**: 116-second narrated showcase for a recent multimodal generative pretraining paper.
-- **ClawMark**: 103-second narrated showcase for a recent multi-turn, multi-day coworker-agent benchmark paper.
+- **Repo intro**: 226-second narrated walkthrough of what this AgentSkill does and how agents use it.
+- **GenLIP / Let ViT Speak**: 356-second narrated showcase for a recent multimodal generative pretraining paper.
+- **ClawMark**: 331-second narrated showcase for a recent multi-turn, multi-day coworker-agent benchmark paper.
+
+## Lightweight Example Clips
+
+These short clips are compact examples for quick README browsing, not the full generated showcase videos.
+
+| Research paper explainer | Product walkthrough | Current-topic briefing |
+|---|---|---|
+| ![Paper explainer demo](examples/videos/paper-explainer-demo.gif) | ![Product walkthrough demo](examples/videos/product-walkthrough-demo.gif) | ![Current topic demo](examples/videos/current-topic-demo.gif) |
+| [10-second MP4](examples/videos/paper-explainer-demo.mp4) | [10-second MP4](examples/videos/product-walkthrough-demo.mp4) | [10-second MP4](examples/videos/current-topic-demo.mp4) |
 
 ## What it does
 
@@ -56,24 +56,24 @@ These are real generated videos created with the skill workflow for this reposit
 
 ```text
 skills/video-production/
-├── SKILL.md
-├── scripts/
-│   ├── init_video_job.py
-│   ├── synth_kokoro.py
-│   ├── archive_video.py
-│   └── host_video.py
-└── references/
-    ├── production-standards.md
-    └── source-playbooks.md
+|-- SKILL.md
+|-- scripts/
+|   |-- init_video_job.py
+|   |-- synth_kokoro.py
+|   |-- archive_video.py
+|   `-- host_video.py
+`-- references/
+    |-- production-standards.md
+    `-- source-playbooks.md
 
 dist/
-├── video-production.skill
-└── video-production.zip
+|-- video-production.skill
+`-- video-production.zip
 
 examples/videos/
-├── paper-explainer-demo.mp4 / .gif
-├── lecture-recap-demo.mp4 / .gif
-└── current-topic-demo.mp4 / .gif
+|-- paper-explainer-demo.mp4 / .gif
+|-- product-walkthrough-demo.mp4 / .gif
+`-- current-topic-demo.mp4 / .gif
 ```
 
 ## Install

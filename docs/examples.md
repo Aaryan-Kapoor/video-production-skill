@@ -9,5 +9,5 @@ Turn this research paper into an 8-minute video. Use the paper figures when help
 ```
 
 ```text
-Make a pre-class video from these lecture notes. Teach from zero, include worked examples, and highlight likely quiz traps.
+Make a product walkthrough from these docs. Explain the workflow, show the differentiators, include caveats, and end with a clear takeaway.
 ```
